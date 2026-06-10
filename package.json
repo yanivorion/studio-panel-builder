@@ -1,0 +1,36 @@
+{
+  "name": "context",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "VITE_DATA_BACKEND=base44 vite",
+    "dev:local": "vite",
+    "build": "vite build",
+    "build:base44": "VITE_DATA_BACKEND=base44 vite build",
+    "deploy:base44": "npm run build:base44 && npx base44 deploy -y",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@base44/sdk": "^0.8.31",
+    "lucide-react": "^1.17.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-grid-layout": "^2.2.3",
+    "react-resizable": "^4.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "base44": "^0.0.54",
+    "eslint": "^10.3.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.12"
+  }
+}

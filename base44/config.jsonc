@@ -1,0 +1,12 @@
+// Studio Panel Builder — Base44 project configuration
+{
+  "name": "studio-panel-builder",
+  "description": "Wix Studio-style website builder with Add Panel and Panel Edit Mode",
+
+  "site": {
+    "installCommand": "npm install",
+    "buildCommand": "npm run build",
+    "serveCommand": "npm run dev",
+    "outputDirectory": "./dist"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "SiteProject",
+  "description": "Website canvas state (pages, sections, elements)",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Project label"
+    },
+    "is_active": {
+      "type": "boolean",
+      "description": "Whether this is the live site project",
+      "default": true
+    },
+    "project_json": {
+      "type": "string",
+      "description": "Serialized site project JSON (pages, sections, elements)"
+    }
+  },
+  "required": ["name", "project_json"],
+  "rls": {
+    "create": true,
+    "read": true,
+    "update": true,
+    "delete": true
+  }
+}

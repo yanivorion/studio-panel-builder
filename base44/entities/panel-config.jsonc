@@ -1,0 +1,32 @@
+{
+  "name": "PanelConfig",
+  "description": "Add Panel builder configuration (categories, groups, templates, layouts)",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Config label (e.g. default, flow:thalina:home)"
+    },
+    "version": {
+      "type": "string",
+      "description": "Schema version",
+      "default": "panel-edit-3"
+    },
+    "is_active": {
+      "type": "boolean",
+      "description": "Whether this config is the live panel definition",
+      "default": true
+    },
+    "config_json": {
+      "type": "string",
+      "description": "Serialized panel-edit JSON payload"
+    }
+  },
+  "required": ["name", "config_json"],
+  "rls": {
+    "create": true,
+    "read": true,
+    "update": true,
+    "delete": true
+  }
+}

@@ -1,0 +1,66 @@
+/* Add Panel — group section header row (Branded Elements, Site files, etc.) */
+.ap-section-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 16px;
+  padding-bottom: 4px;
+  margin: 0;
+  cursor: default;
+  border-radius: 0;
+  outline: none;
+  outline-offset: 2px;
+}
+
+.ap-section-label--editable {
+  cursor: pointer;
+  border-radius: 6px;
+  margin: 0 -6px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.ap-section-label--active {
+  outline: 1px dashed rgba(17, 109, 255, 0.3);
+}
+
+.ap-section-label--actions {
+  padding-top: 8px;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.ap-section-label--drill-in {
+  display: block;
+  padding-top: 0;
+}
+
+.ap-section-label__title {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'WixMadeforText', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: -0.01em;
+}
+
+.ap-section-label__title--actions {
+  flex: none;
+  margin-right: auto;
+  font-size: 10px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.44);
+}
+
+.ap-section-label__see-more {
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'WixMadeforText', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  color: #116dff;
+}
