@@ -9,6 +9,7 @@
     "build": "vite build",
     "build:base44": "VITE_DATA_BACKEND=base44 vite build",
     "deploy:base44": "npm run build:base44 && npx base44 deploy -y",
+    "build:pages": "VITE_BASE_PATH=/studio-panel-builder/ npm run build:base44",
     "lint": "eslint .",
     "preview": "vite preview"
   },
